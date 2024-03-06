@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Secular One", sans-serif;
+}
+
+video{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header {
+  border-radius: 300px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 1px 5px rgba(132, 70, 70, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.site-header .logo img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: sticky;
+}
+
+.main-nav ul li {
+  margin-right: 70px;
+  position: sticky;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+.main-nav a.active {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.main-nav a:hover {
+  color: #2ecc71;
+}
+
+.main-nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color:aqua;
+  transition: width 0.3s ease-in-out;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+.main-content {
+  margin-top: 50px;
+}
+
+body.scrolled .site-header {
+  background-color: #2980b9;
+}
+button {
+  color: #f39c12;
+  padding: 10px 40px;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: inherit;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.begining {
+  text-align: center;
+  font-size: 45px;
+  padding: 300px;
+  color: #fff;
+}
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: silver;
+  padding: 100px 0 30px;
+  line-height: 20px;
+  font-size: 15px;
+  font-family:"Secular One", sans-serif; 
+}
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap:wrap ;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.logo{
+  left: 120px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+  animation: colorChange 10s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #3498db;
+  }
+  10% {
+    color: #2ecc71;
+  }
+  20% {
+    color: #e74c3c;
+  }
+  30% {
+    color: #f39c12;
+  }
+  40% {
+    color: #9b59b6;
+  }
+  50% {
+    color: #3498db;
+  }
+  60% {
+    color: #2ecc71;
+  }
+  70% {
+    color: #e74c3c;
+  }
+  80% {
+    color: #f39c12;
+  }
+  90% {
+    color: #9b59b6;
+  }
+  100% {
+    color: #3498db;
+  }
+}
+.done{
+  text-decoration: none
+  ;
+  color:red;
+}
+
+.k{
+  color: #f39c12;
+  text-align:center;
+}
+
+#ocye{
+  display: flex;
+  justify-content:space-around;
+  width: 100%;
+  
+}
+.line{
+  display: flex;
+  justify-content: space-around;
+}
+
